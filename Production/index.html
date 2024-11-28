@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    *{ 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /*universal use for all in website*/
+    body{
+        min-height: 100vh; /*see all of the website*/
+        background-color: black;
+        overflow-x: hidden; /*no left-right scroll bar */
+    }
+    .scrolling{ /*create css class */
+        position:relative; /*object in web is relative*/
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        background: url('bg1.jpg') no-repeat;
+        background-size: cover;
+        background-attachment: fixed; /*fixed bg*/
+        background-position: center;
+        align-items: center;
+    }
+    .scrolling img{
+        position: absolute;
+        top: 50px;
+        right: 0px; /*img show in right side*/
+        width: 30%;
+        pointer-events: none;
+    }
+    .scrolling img#santa-r{
+        position: fixed;
+        transform: translateX(1500px); /*start from x right side out of screen*/
+    }
+    .content{
+        position: relative;
+        padding: 50px;
+        /*color: rgb(255, 240, 165);*/
+        background-color: brown;
+    }
+    p{
+        color: beige;
+        font-size: 1.5em;
+        font-style: italic;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        text-align: justify; /**/
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>x-mas x-men</title>
+</head>
+<body>
+    <div class="scrolling">
+        <h1 id="txt1" style="color:rgb(235, 196, 118); font-size: 7em; 
+        position: absolute;
+        font-family: 'candlefish', sans-serif;
+        font-style: italic;
+        text-shadow: 5px 5px 5px rgb(41, 38, 78);"> merry x-mas</h1>
+        <img src="ss-removebg-preview.png" id="santa-r">
+    </div>
+    <div class="content">
+        <img src="tree.gif" style="width:30%; display: block; margin: auto;">
+        <p >
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+              mollit anim id est laborum."
+        </p> 
+        <p >
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim imperdiet inceptos
+             velit magnis donec mollis vitae urna. Senectus nec primis diam rutrum pellentesque
+              augue cras curabitur. Sociosqu ac interdum natoque quisque duis, nibh aliquet.
+            Blandit etiam nam odio sem hendrerit lacus non gravida congue. Ac commodo 
+            pellentesque rutrum sodales quam iaculis nostra nunc. Ante morbi maximus convallis 
+            fusce ullamcorper placerat proin. Laoreet adipiscing dignissim ut tempus sapien; sodales consectetur egestas.
+            Luctus feugiat dictum maximus himenaeos cubilia conubia aliquam potenti orci. 
+            Velit felis inceptos vitae aliquet, sagittis morbi rutrum class. Placerat turpis 
+            inceptos bibendum ut purus potenti. Est rutrum nibh parturient torquent libero class 
+            tempus vivamus. Ac vivamus magnis scelerisque at diam non malesuada. Dis libero finibus 
+            dictumst vitae venenatis luctus rhoncus praesent. Lorem vivamus proin viverra felis viverra.
+        </p>
+        <p >
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+              mollit anim id est laborum."
+        </p> 
+    </div>
+    <script src="para-js.js">
+
+    </script>
+    <header>
+     
+    </header>
+    
+</body>
+</html>
